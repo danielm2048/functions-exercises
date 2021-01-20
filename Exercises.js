@@ -1,7 +1,7 @@
 //Question 1
 function myReverse(str) {
   // your code here
-  return "";
+  return str.split("").reverse().join("");
 }
 
 //Question 2
