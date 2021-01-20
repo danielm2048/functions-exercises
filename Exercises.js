@@ -8,7 +8,11 @@ function myReverse(str) {
 function allCombinations(str) {
   let combinations = [];
   // your code here
-
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i; j < str.length; j++) {
+      combinations.push(str.substring(i, j + 1));
+    }
+  }
   //
   return combinations;
 }
