@@ -20,7 +20,21 @@ function allCombinations(str) {
 //Question 3
 function allCaps(str) {
   // your code here
-  return "";
+  let res = str[0].toUpperCase();
+
+  for (let i = 1; i < str.length; i++) {
+    if (str[i - 1] === " ") {
+      res += str[i].toUpperCase();
+    }
+    else {
+      res += str[i];
+    }
+  }
+
+  return res;
+
+  //One line solution
+  //return str.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ');
 }
 
 //Question 4
