@@ -46,6 +46,23 @@ function myPower(x, n) {
 //Question 5
 function getFirstNotRepeating(str) {
   // your code here
+  let seen = {};
+
+  for (let i = 0; i < str.length; i++) {
+    if (!seen[str[i]]) {
+      seen[str[i]] = 1;
+    }
+    else {
+      seen[str[i]]++;
+    }
+  }
+
+  for (const prop in seen) {
+    if (seen[prop] === 1) {
+      return str[seen[prop]];
+    }
+  }
+
   return "";
 }
 
