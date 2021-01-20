@@ -40,7 +40,7 @@ function allCaps(str) {
 //Question 4
 function myPower(x, n) {
   // your code here
-  return "";
+  return x ** n;
 }
 
 //Question 5
