@@ -69,7 +69,15 @@ function getFirstNotRepeating(str) {
 //Question 6 (Bonus)
 function isPrefectNumber(num) {
   // your code here
-  return "I'm not interested in the bonus question :(";
+  let sum = 0;
+
+  for (let i = 1; i <= num / 2; i++) {
+    if (num % i === 0) {
+      sum += i;
+    }
+  }
+
+  return sum === num;
 }
 
 // *** Playground ***
